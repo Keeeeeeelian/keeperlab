@@ -10,8 +10,21 @@ footer small:last-child{justify-self:end;margin-top:-15px}
 .newsletter h2 em{color:var(--ink);opacity:.42}
 .newsletter h2{font-size:clamp(28px,4.4vw,55px);white-space:nowrap}
 .newsletter-form{width:100%}
-.newsletter-iframe{display:block;width:100%;max-width:540px;height:305px;margin:0 auto;border:0;background:transparent}
-.newsletter-form small{display:block;margin-top:10px;font-size:9px;font-weight:600;text-align:center}
+.newsletter-form form{width:100%}
+.newsletter-field{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:stretch}
+.newsletter-field input,.newsletter-field button{height:52px;border:1px solid var(--ink);font:11px Montserrat,Arial,sans-serif}
+.newsletter-field input{min-width:0;width:100%;padding:0 16px;background:#ebff88;color:var(--ink);outline:none}
+.newsletter-field input:focus{background:#fff;box-shadow:inset 0 0 0 2px var(--ink)}
+.newsletter-field input::placeholder{color:#5d671f}
+.newsletter-field button{padding:0 18px;background:var(--ink);color:#fff;font-weight:800;white-space:nowrap;cursor:pointer}
+.newsletter-field button:hover{background:#202820}
+.newsletter-form small{display:block;margin-top:10px;font-size:9px;font-weight:600}
+.newsletter-message{display:none;margin-bottom:10px;padding:11px 13px;border:1px solid var(--ink);font-size:11px;font-weight:700}
+.newsletter-message-success{background:#fff;color:#085229}
+.newsletter-message-error{background:#fff;color:#8b1e1e}
+.newsletter-field-error{margin:7px 0 0;color:#8b1e1e;font-size:10px;font-weight:700}
+.input--hidden{position:absolute!important;left:-9999px!important}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
 
 @media(max-width:800px){
   .article-list a{height:auto;min-height:112px;padding:20px 0}
@@ -25,5 +38,6 @@ footer small:last-child{justify-self:end;margin-top:-15px}
   .category-card span{top:17px;left:18px}
   .article-list h3{font-size:25px}
   .article-list{padding:25px 30px}
-  .newsletter-iframe{min-height:305px}
+  .newsletter-field{grid-template-columns:1fr}
+  .newsletter-field button{width:100%}
 }
