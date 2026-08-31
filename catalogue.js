@@ -1,0 +1,9 @@
+const names={all:"Tout",gants:"Gants",chaussures:"Chaussures",textile:"Textile",protections:"Protections"};
+const grid=document.querySelector("#catalogue-grid"),count=document.querySelector("#catalogue-count"),search=document.querySelector("#catalogue-search"),filters=document.querySelector("#catalogue-filters");
+let products=[],active=new URLSearchParams(location.search).get("category")||"all";
+const price=value=>new Intl.NumberFormat("fr-CH",{style:"currency",currency:"CHF"}).format(value);
+function card(p){const old=p.originalPrice?'<del>'+price(p.originalPrice)+'</del>':"";return '<article class="catalog-product"><div class="catalog-image" style="background-image:url('+p.image+')"><span>'+p.badge+'</span><b>'+p.brand+'</b></div><div class="catalog-info"><p>'+names[p.category]+'</p><h2>'+p.name+'</h2><small>'+p.description+'</small><div><strong>'+price(p.price)+'</strong>'+old+'</div><a href="'+p.affiliateUrl+'" target="_blank" rel="noopener sponsored">Voir l’offre <i>↗</i></a></div></article>'}
+function render(){const term=search.value.trim().toLowerCase();const visible=products.filter(p=>(active==="all"||p.category===active)&&(p.name+" "+p.brand+" "+p.description).toLowerCase().includes(term));count.textContent=visible.length+" produit"+(visible.length!==1?"s":"");grid.innerHTML=visible.map(card).join("")||"<p class='catalog-empty'>Aucun produit ne correspond à votre recherche.</p>";filters.querySelectorAll("button").forEach(b=>b.classList.toggle("active",b.dataset.category===active))}
+filters.addEventListener("click",e=>{const b=e.target.closest("button");if(!b)return;active=b.dataset.category;history.replaceState(null,"",active==="all"?"catalogue.html":"catalogue.html?category="+active);render()});
+search.addEventListener("input",render);
+fetch("data/products.json").then(r=>r.json()).then(data=>{products=data;render()}).catch(()=>{grid.innerHTML="<p class='catalog-empty'>Le catalogue est momentanément indisponible.</p>"});
