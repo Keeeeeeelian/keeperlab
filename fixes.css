@@ -8,6 +8,7 @@
 footer small:last-child{justify-self:end;margin-top:-15px}
 .newsletter{display:grid;grid-template-columns:minmax(0,1fr) minmax(300px,390px);gap:64px;align-items:center}
 .newsletter h2 em{color:var(--ink);opacity:.42}
+.newsletter h2{font-size:clamp(40px,4.4vw,55px);white-space:nowrap}
 .newsletter form{width:100%;display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:stretch}
 .newsletter input{min-width:0;width:100%}
 .newsletter button{white-space:nowrap}
@@ -18,6 +19,7 @@ footer small:last-child{justify-self:end;margin-top:-15px}
   .article-list h3{font-size:27px}
   footer small:last-child{justify-self:start;margin-top:0}
   .newsletter{grid-template-columns:1fr;gap:30px}
+  .newsletter h2{white-space:normal}
   .newsletter form{max-width:440px}
 }
 
