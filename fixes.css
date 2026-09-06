@@ -46,3 +46,7 @@ footer small:last-child{justify-self:end;margin-top:-15px}
   .newsletter-field{grid-template-columns:1fr}
   .newsletter-field button{width:100%}
 }
+
+/* Accès au comparateur, y compris sur petit écran. */
+.site-header nav .nav-comparator{background:var(--lime);color:var(--ink);padding:9px 12px}.site-header nav{align-items:center}.site-header nav a:focus-visible{outline:2px solid var(--ink);outline-offset:3px}.site-header nav .nav-comparator[aria-current="page"]{box-shadow:inset 0 -3px var(--ink)}
+@media(max-width:800px){.site-header nav{flex-wrap:wrap;justify-content:flex-start;gap:8px 14px;font-size:12px}.site-header nav a{padding:8px 0}.site-header{position:relative}}
