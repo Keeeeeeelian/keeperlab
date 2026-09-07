@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <script defer src="https://cloud.umami.is/script.js" data-website-id="c8ce7437-1e59-4e97-854e-5eff5654879c"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <meta name="description" content="Trouvez les gants de gardien adaptés à votre budget, votre usage et votre préférence de coupe avec KeeperLab.">
+  <link rel="canonical" href="https://keeperlab.ch/trouve-ton-gant.html">
+  <meta property="og:type" content="website"><meta property="og:locale" content="fr_CH"><meta property="og:site_name" content="KeeperLab">
+  <meta property="og:title" content="Trouve ton gant — KeeperLab"><meta property="og:description" content="Trois questions simples pour trouver les gants qui vous correspondent."><meta property="og:url" content="https://keeperlab.ch/trouve-ton-gant.html"><meta property="og:image" content="https://keeperlab.ch/logo_final.png">
+  <title>Trouve ton gant — KeeperLab</title>
+  <link rel="icon" type="image/png" href="logo_transparent.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css"><link rel="stylesheet" href="fixes.css"><link rel="stylesheet" href="finder.css">
+</head>
+<body>
+  <div class="topbar">Les recommandations utilisent uniquement les informations disponibles dans le catalogue</div>
+  <header class="site-header">
+    <a class="logo" href="site.html" aria-label="KeeperLab, accueil"><span>KEEPER</span>LAB<i></i></a>
+    <nav aria-label="Navigation principale"><a class="nav-comparator" href="comparateur.html">Comparateur</a><a href="catalogue.html">Catalogue</a><a class="active" href="trouve-ton-gant.html">Trouve ton gant</a><a href="articles.html">Blogs</a><a href="a-propos.html">À propos</a><a href="contact.html">Contact</a></nav>
+    <div class="header-actions"><a class="country" href="#">CH <span>⌄</span></a></div>
+  </header>
+  <main class="finder-page">
+    <section class="finder-intro"><p class="eyebrow">KEEPER MATCH · 3 QUESTIONS</p><h1>TROUVE TON<br><em>GANT.</em></h1><p>Dis-nous ce que tu recherches. Nous classons les gants du catalogue à partir de leur prix et des usages ou coupes explicitement indiqués sur leur fiche.</p></section>
+    <section class="finder-app" aria-live="polite">
+      <div class="finder-quiz">
+        <div class="finder-progress"><span id="finder-step-label">ÉTAPE 1 SUR 3</span><div class="finder-progress-track"><div class="finder-progress-bar"></div></div></div>
+        <div class="finder-panel">
+          <div><div class="finder-question" id="finder-question"></div><div class="finder-controls"><button class="finder-back" type="button">← Retour</button><button class="finder-next" type="button" disabled>Continuer →</button></div></div>
+          <aside class="finder-side"><strong>UN CHOIX TRANSPARENT.</strong><p>Aucune note cachée ni caractéristique supposée. Quand une information manque, le modèle reste éligible mais n’obtient pas de point pour ce critère.</p></aside>
+        </div>
+      </div>
+      <div class="finder-results">
+        <div class="results-head"><h2>TES 3 <em>MEILLEURS MATCHS.</em></h2><p>Classés selon tes réponses et les informations réellement présentes dans le catalogue KeeperLab.</p></div>
+        <div class="recommendations" id="recommendations"></div>
+        <div class="results-actions"><button class="compare-results" type="button">Comparer ces résultats</button><button class="restart-results" type="button">Recommencer</button></div>
+        <div class="comparison-table" id="comparison-table"></div>
+        <p class="finder-disclaimer">Ce résultat est une aide au choix, pas un test terrain. Vérifie toujours la taille et les informations finales chez le partenaire.</p>
+      </div>
+    </section>
+  </main>
+  <footer><a class="logo" href="site.html"><span>KEEPER</span>LAB<i></i></a><p>Gear. Compare. Save.</p><div><a href="catalogue.html">Catalogue</a><a href="transparence-affiliation.html">Affiliation</a></div><small>KeeperLab est un site comparateur affilié. Certains liens peuvent nous rapporter une commission, sans coût supplémentaire pour vous.</small><small>© 2026 KeeperLab · Suisse</small></footer>
+  <script src="trouve-ton-gant.js"></script>
+</body>
+</html>
