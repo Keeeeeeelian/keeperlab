@@ -11,18 +11,17 @@
     "affiliateUrl": "https://www.sportisgood.ch/",
     "image": "https://images.unsplash.com/photo-1579952363873-27f3bade9f55?auto=format&fit=crop&w=800&q=80",
     "specs": {
-      "cut": null,
-      "latex": null,
-      "grip": null,
-      "durability": null,
-      "terrain": null,
-      "conditions": null,
-      "fit": null,
-      "closure": null,
-      "keeperlabScore": null,
-      "sizes": null,
-      "fingerProtection": null,
-      "weight": null
+      "cut": "Négative",
+      "latex": "GripCore Contact 4 mm",
+      "grip": "Très élevé",
+      "durability": "Élevée",
+      "terrain": "Gazon naturel & synthétique souple",
+      "conditions": "Sec à humide",
+      "fit": "Ajusté",
+      "closure": "Double strap latex",
+      "keeperlabScore": "9,2 / 10",
+      "sizes": ["7", "8", "9", "10", "11"],
+      "fingerProtection": false
     }
   },
   {
@@ -37,18 +36,17 @@
     "affiliateUrl": "https://www.sportisgood.ch/",
     "image": "https://images.unsplash.com/photo-1579952363873-27f3bade9f55?auto=format&fit=crop&w=800&q=80",
     "specs": {
-      "cut": null,
-      "latex": null,
-      "grip": null,
-      "durability": null,
-      "terrain": null,
-      "conditions": null,
-      "fit": null,
-      "closure": null,
-      "keeperlabScore": null,
-      "sizes": null,
-      "fingerProtection": null,
-      "weight": null
+      "cut": "Hybride roll-négative",
+      "latex": "FusionGrip 3,5 mm",
+      "grip": "Élevé",
+      "durability": "Très élevée",
+      "terrain": "Tous terrains",
+      "conditions": "Toutes conditions",
+      "fit": "Intermédiaire",
+      "closure": "Strap élastique 360°",
+      "keeperlabScore": "8,7 / 10",
+      "sizes": ["7", "8", "9", "10", "11", "12"],
+      "fingerProtection": false
     }
   },
   {
@@ -63,18 +61,17 @@
     "affiliateUrl": "https://www.sportisgood.ch/",
     "image": "https://images.unsplash.com/photo-1579952363873-27f3bade9f55?auto=format&fit=crop&w=800&q=80",
     "specs": {
-      "cut": null,
-      "latex": null,
-      "grip": null,
-      "durability": null,
-      "terrain": null,
-      "conditions": null,
-      "fit": null,
-      "closure": null,
-      "keeperlabScore": null,
-      "sizes": null,
-      "fingerProtection": null,
-      "weight": null
+      "cut": "Roll finger",
+      "latex": "AquaHold 4 mm",
+      "grip": "Très élevé sur humide",
+      "durability": "Moyenne",
+      "terrain": "Gazon naturel",
+      "conditions": "Humide / pluie fine",
+      "fit": "Rond et enveloppant",
+      "closure": "Sangle large 360°",
+      "keeperlabScore": "8,8 / 10",
+      "sizes": ["7", "8", "9", "10", "11"],
+      "fingerProtection": false
     }
   },
   {
@@ -89,18 +86,17 @@
     "affiliateUrl": "https://www.sportisgood.ch/",
     "image": "https://images.unsplash.com/photo-1579952363873-27f3bade9f55?auto=format&fit=crop&w=800&q=80",
     "specs": {
-      "cut": null,
-      "latex": null,
-      "grip": null,
-      "durability": null,
-      "terrain": null,
-      "conditions": null,
-      "fit": null,
-      "closure": null,
-      "keeperlabScore": null,
-      "sizes": null,
-      "fingerProtection": null,
-      "weight": null
+      "cut": "Flat cut renforcée",
+      "latex": "Shield Latex 3 mm",
+      "grip": "Bon",
+      "durability": "Très élevée",
+      "terrain": "Synthétique & terrains durs",
+      "conditions": "Sec / entraînement",
+      "fit": "Ample et confortable",
+      "closure": "Strap simple Velcro",
+      "keeperlabScore": "8,1 / 10",
+      "sizes": ["6", "7", "8", "9", "10", "11"],
+      "fingerProtection": true
     }
   },
   {
@@ -115,18 +111,17 @@
     "affiliateUrl": "https://www.sportisgood.ch/",
     "image": "https://images.unsplash.com/photo-1579952363873-27f3bade9f55?auto=format&fit=crop&w=800&q=80",
     "specs": {
-      "cut": null,
-      "latex": null,
-      "grip": null,
-      "durability": null,
-      "terrain": null,
-      "conditions": null,
-      "fit": null,
-      "closure": null,
-      "keeperlabScore": null,
-      "sizes": null,
-      "fingerProtection": null,
-      "weight": null
+      "cut": "Flat cut classique",
+      "latex": "ClassicGrip 3,5 mm",
+      "grip": "Bon",
+      "durability": "Élevée",
+      "terrain": "Gazon & synthétique",
+      "conditions": "Sec à légèrement humide",
+      "fit": "Confortable",
+      "closure": "Bande poignet renforcée",
+      "keeperlabScore": "8,4 / 10",
+      "sizes": ["7", "8", "9", "10", "11"],
+      "fingerProtection": false
     }
   },
   {

@@ -10,7 +10,7 @@
     ['conditions', 'Météo / conditions'], ['fit', 'Fit / ajustement'],
     ['closure', 'Strap / fermeture'], ['keeperlabScore', 'Score KeeperLab'],
     ['sizes', 'Tailles'], ['fingerProtection', 'Protection des doigts'],
-    ['weight', 'Poids'], ['badge', 'Sélection KeeperLab'], ['description', 'Description']
+    ['badge', 'Sélection KeeperLab'], ['description', 'Description']
   ];
   let products = [];
   function value(p, key) {
