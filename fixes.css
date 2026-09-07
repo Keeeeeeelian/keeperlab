@@ -1,4 +1,6 @@
 /* Correctifs de disposition KeeperLab */
+body{min-height:100vh;min-height:100dvh;display:flex;flex-direction:column}
+body>main{flex:1}
 .catalog-image{display:block}
 .category-card span{top:18px;left:20px;font-weight:800}
 .article-list a:first-child{border-top:1px solid #ffffff35}
