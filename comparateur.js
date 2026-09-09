@@ -42,7 +42,7 @@
     chosen.forEach((p, i) => {
       const link = document.querySelector('#compare-detail-' + i);
       link.hidden = !p;
-      if (p) { link.href = 'produit.html?id=' + encodeURIComponent(p.id); link.textContent = 'Voir la fiche : ' + p.name + ' →'; }
+      if (p) { link.href = p.productPage || 'produit.html?id=' + encodeURIComponent(p.id); link.textContent = 'Voir la fiche : ' + p.name + ' →'; }
     });
     status.textContent = chosen.every(Boolean) ? (chosen[0].id === chosen[1].id ? 'Le même gant est sélectionné des deux côtés. Choisissez un autre modèle pour comparer.' : chosen.map(p => p.name).join(' / ')) : 'Sélectionnez un gant de chaque côté pour comparer.';
   }

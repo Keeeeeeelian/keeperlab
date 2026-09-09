@@ -1,5 +1,26 @@
 [
   {
+    "id": "adidas-predator-pro-jy6295",
+    "name": "adidas Predator Pro URG 2.0+",
+    "brand": "adidas",
+    "category": "gants",
+    "productPage": "adidas-predator-pro-urg-2-plus.html",
+    "modelCode": "JY6295",
+    "color": "White / Lucid Red / Black",
+    "price": null,
+    "originalPrice": null,
+    "badge": "URG 2.0+",
+    "description": "Coupe négative (Negative Cut) et paume URG 2.0+.",
+    "affiliateUrl": null,
+    "image": "https://assets.adidas.com/images/w_500,f_auto,q_auto/120750a7577f4f4eb95ecc5163e6cf41_9366/GANTS_DE_GARDIEN_PREDATOR_PRO_Blanc_JY6295_21_model.jpg",
+    "specs": {
+      "cut": "Négative (Negative Cut)",
+      "latex": "URG 2.0+",
+      "closure": "Ouverture en maille technique",
+      "keeperlabScore": null
+    }
+  },
+  {
     "id": "gk-apex-pro",
     "name": "Apex Pro NC",
     "brand": "K-LAB",

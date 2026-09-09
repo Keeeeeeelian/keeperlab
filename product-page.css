@@ -1,0 +1,27 @@
+.product-page{max-width:1280px;width:100%;margin:auto;padding:28px 5.7vw 80px}
+.product-breadcrumb{font-size:11px;line-height:1.8;margin-bottom:30px;overflow-wrap:anywhere}
+.product-breadcrumb a{text-decoration:underline;text-underline-offset:3px}
+.product-hero{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:48px;align-items:center}
+.product-hero figure{margin:0;background:#eceeed}
+.product-hero img{display:block;width:100%;height:auto;aspect-ratio:1;object-fit:contain}
+.product-hero figcaption{padding:16px;font-size:10px;line-height:1.6}
+.product-intro h1{font-size:clamp(48px,5.8vw,82px)}
+.product-intro h1 em{color:#587500}
+.product-intro>p:not(.eyebrow){font-size:14px;line-height:1.8;margin:24px 0}
+.product-highlights{list-style:none;padding:0;display:flex;flex-wrap:wrap;gap:8px}
+.product-highlights li{border:1px solid var(--line);padding:8px 10px;font-size:11px;font-weight:700}
+.product-actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:25px}
+.product-actions .button{line-height:1.6}
+.product-content{max-width:900px;margin:60px auto 0}
+.product-content section{padding:35px 0;border-top:1px solid var(--line);scroll-margin-top:110px}
+.product-content h2{font-size:clamp(32px,4vw,48px);line-height:1.05;margin-bottom:26px}
+.product-specs{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px 36px}
+.product-page dt{font-size:13px;font-weight:800;line-height:1.6}
+.product-page dd{margin:6px 0 0;font-size:13px;line-height:1.8;color:#50544d}
+.product-composition>div{display:grid;grid-template-columns:100px minmax(0,1fr);gap:20px;margin:15px 0}
+.product-composition dd{margin:0}
+.product-care{padding-left:20px;font-size:13px;line-height:2}
+.product-source{font-size:11px;line-height:1.8;margin:0 0 30px}
+.product-source a{text-decoration:underline}
+.product-page a:focus-visible{outline:2px solid var(--ink);outline-offset:4px}
+@media(max-width:767px){.product-page{padding:22px 21px 55px}.product-hero{grid-template-columns:1fr;gap:28px}.product-hero figure{max-width:500px;width:100%;margin:auto}.product-intro h1{font-size:clamp(44px,11vw,70px)}.product-content{margin-top:40px}.product-specs{grid-template-columns:1fr;gap:20px}.product-composition>div{grid-template-columns:1fr;gap:0}.product-content section{scroll-margin-top:85px}}

@@ -1,3 +1,4 @@
+.mobile-menu[hidden]{display:none!important}
 @media (min-width:768px){.mobile-menu-toggle,.mobile-menu{display:none!important}}
 
 @media (max-width:767px){
