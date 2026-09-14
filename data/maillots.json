@@ -16,7 +16,7 @@
     ],
     "merchant": "FansJerseyHub",
     "affiliateUrl": "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3056435&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Flos-blancos-home-player-version-soccer-jersey-2026-27-white%3F_pos%3D1%26_sid%3D5935fb8ca%26_ss%3Dr",
-    "image": null
+    "image": "assets/maillots/real-madrid-domicile-2026-27.webp"
   },
   {
     "id": "real-madrid-exterieur-2026-27",
@@ -35,7 +35,7 @@
     ],
     "merchant": "FansJerseyHub",
     "affiliateUrl": "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3056435&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Flos-blancos-away-player-version-soccer-jersey-2026-27%3F_pos%3D3%26_sid%3D5935fb8ca%26_ss%3Dr",
-    "image": null
+    "image": "assets/maillots/real-madrid-exterieur-2026-27.webp"
   },
   {
     "id": "real-madrid-third-2026-27",
@@ -54,7 +54,7 @@
     ],
     "merchant": "FansJerseyHub",
     "affiliateUrl": "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3056435&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Flos-blancos-third-away-soccer-jersey-2026-27%3F_pos%3D6%26_sid%3D5935fb8ca%26_ss%3Dr",
-    "image": null
+    "image": "assets/maillots/real-madrid-third-2026-27.webp"
   },
   {
     "id": "psg-domicile-2026-27",
@@ -73,7 +73,7 @@
     ],
     "merchant": "FansJerseyHub",
     "affiliateUrl": "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3056435&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fpsg-home-player-version-soccer-jersey-2026-27%3F_pos%3D14%26_sid%3D59693bea7%26_ss%3Dr",
-    "image": null
+    "image": "assets/maillots/psg-domicile-2026-27.webp"
   },
   {
     "id": "psg-exterieur-2026-27",
@@ -92,7 +92,7 @@
     ],
     "merchant": "FansJerseyHub",
     "affiliateUrl": "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3056435&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fpsg-away-player-version-soccer-jersey-2026-27%3F_pos%3D1%26_sid%3D59693bea7%26_ss%3Dr",
-    "image": null
+    "image": "assets/maillots/psg-exterieur-2026-27.webp"
   },
   {
     "id": "chelsea-domicile-2026-27",
@@ -111,7 +111,7 @@
     ],
     "merchant": "FansJerseyHub",
     "affiliateUrl": "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3056435&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fchelsea-home-soccer-jersey-2026-27%3F_pos%3D3%26_sid%3D7247c0286%26_ss%3Dr",
-    "image": null
+    "image": "assets/maillots/chelsea-domicile-2026-27.webp"
   },
   {
     "id": "chelsea-exterieur-2026-27",
@@ -130,7 +130,7 @@
     ],
     "merchant": "FansJerseyHub",
     "affiliateUrl": "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3056435&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fchelsea-away-soccer-jersey-2026-27%3F_pos%3D1%26_sid%3D7247c0286%26_ss%3Dr",
-    "image": null
+    "image": "assets/maillots/chelsea-exterieur-2026-27.webp"
   },
   {
     "id": "barcelona-domicile-2026-27",
@@ -149,7 +149,7 @@
     ],
     "merchant": "FansJerseyHub",
     "affiliateUrl": "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3056435&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fbarcelona-home-player-version-soccer-jersey-2026-27%3F_pos%3D1%26_sid%3Db36d4354b%26_ss%3Dr",
-    "image": null
+    "image": "assets/maillots/barcelona-domicile-2026-27.webp"
   },
   {
     "id": "barcelona-exterieur-2026-27",
@@ -168,7 +168,7 @@
     ],
     "merchant": "FansJerseyHub",
     "affiliateUrl": "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3056435&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fbarcelona-kobe-bryant-away-player-version-soccer-jersey-2026-27%3F_pos%3D6%26_sid%3Db36d4354b%26_ss%3Dr",
-    "image": null
+    "image": "assets/maillots/barcelona-exterieur-2026-27.webp"
   },
   {
     "id": "arsenal-domicile-2026-27",
@@ -187,7 +187,7 @@
     ],
     "merchant": "FansJerseyHub",
     "affiliateUrl": "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3056435&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Farsenal-home-player-version-soccer-jersey-2026-27%3F_pos%3D4%26_sid%3D7b7d8795e%26_ss%3Dr",
-    "image": null
+    "image": "assets/maillots/arsenal-domicile-2026-27.webp"
   },
   {
     "id": "arsenal-exterieur-2026-27",
@@ -206,7 +206,7 @@
     ],
     "merchant": "FansJerseyHub",
     "affiliateUrl": "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3056435&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Farsenal-away-player-version-soccer-jersey-2026-27%3F_pos%3D11%26_sid%3D7b7d8795e%26_ss%3Dr",
-    "image": null
+    "image": "assets/maillots/arsenal-exterieur-2026-27.webp"
   },
   {
     "id": "arsenal-third-2026-27",
@@ -225,7 +225,7 @@
     ],
     "merchant": "FansJerseyHub",
     "affiliateUrl": "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3056435&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Farsenal-third-away-player-version-soccer-jersey-2026-27%3F_pos%3D16%26_sid%3D7b7d8795e%26_ss%3Dr",
-    "image": null
+    "image": "assets/maillots/arsenal-third-2026-27.webp"
   },
   {
     "id": "manchester-city-domicile-2026-27",
@@ -244,7 +244,7 @@
     ],
     "merchant": "FansJerseyHub",
     "affiliateUrl": "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3056435&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fmanchester-city-home-soccer-jersey-2026-27%3F_pos%3D3%26_sid%3Dcd54819d4%26_ss%3Dr",
-    "image": null
+    "image": "assets/maillots/manchester-city-domicile-2026-27.webp"
   },
   {
     "id": "manchester-city-exterieur-2026-27",
@@ -263,7 +263,7 @@
     ],
     "merchant": "FansJerseyHub",
     "affiliateUrl": "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3056435&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fmanchester-city-away-soccer-jersey-2026-27%3F_pos%3D5%26_sid%3Dcd54819d4%26_ss%3Dr",
-    "image": null
+    "image": "assets/maillots/manchester-city-exterieur-2026-27.webp"
   },
   {
     "id": "manchester-city-third-2026-27",
@@ -282,7 +282,7 @@
     ],
     "merchant": "FansJerseyHub",
     "affiliateUrl": "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3056435&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fmanchester-city-third-away-soccer-jersey-2026-27%3F_pos%3D1%26_sid%3Dcd54819d4%26_ss%3Dr",
-    "image": null
+    "image": "assets/maillots/manchester-city-third-2026-27.webp"
   },
   {
     "id": "bayern-munich-domicile-2026-27",
@@ -301,7 +301,7 @@
     ],
     "merchant": "FansJerseyHub",
     "affiliateUrl": "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3056435&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fbayern-munich-home-player-version-soccer-jersey-2026-27%3F_pos%3D3%26_sid%3Dee022b98b%26_ss%3Dr",
-    "image": null
+    "image": "assets/maillots/bayern-munich-domicile-2026-27.webp"
   },
   {
     "id": "bayern-munich-exterieur-2026-27",
@@ -320,7 +320,7 @@
     ],
     "merchant": "FansJerseyHub",
     "affiliateUrl": "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3056435&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fbayern-munich-away-player-version-soccer-jersey-2026-27%3F_pos%3D5%26_sid%3Dee022b98b%26_ss%3Dr",
-    "image": null
+    "image": "assets/maillots/bayern-munich-exterieur-2026-27.webp"
   },
   {
     "id": "bayern-munich-third-2026-27",
@@ -339,7 +339,7 @@
     ],
     "merchant": "FansJerseyHub",
     "affiliateUrl": "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3056435&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fbayern-munich-third-away-soccer-jersey-2026-27%3F_pos%3D4%26_sid%3Dee022b98b%26_ss%3Dr",
-    "image": null
+    "image": "assets/maillots/bayern-munich-third-2026-27.webp"
   },
   {
     "id": "manchester-united-domicile-2026-27",
@@ -358,7 +358,7 @@
     ],
     "merchant": "FansJerseyHub",
     "affiliateUrl": "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3056435&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fmanchester-united-home-kit-jersey-shorts-2026-27%3F_pos%3D2%26_sid%3D2914c5b15%26_ss%3Dr",
-    "image": null
+    "image": "assets/maillots/manchester-united-domicile-2026-27.webp"
   },
   {
     "id": "manchester-united-exterieur-2026-27",
@@ -377,7 +377,7 @@
     ],
     "merchant": "FansJerseyHub",
     "affiliateUrl": "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3056435&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fmanchester-united-player-version-away-soccer-jersey-2026-27%3F_pos%3D15%26_sid%3D2914c5b15%26_ss%3Dr",
-    "image": null
+    "image": "assets/maillots/manchester-united-exterieur-2026-27.webp"
   },
   {
     "id": "manchester-united-third-2026-27",
@@ -396,6 +396,6 @@
     ],
     "merchant": "FansJerseyHub",
     "affiliateUrl": "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3056435&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fmanchester-united-third-away-soccer-jersey-2026-27%3F_pos%3D1%26_sid%3D2914c5b15%26_ss%3Dr",
-    "image": null
+    "image": "assets/maillots/manchester-united-third-2026-27.webp"
   }
 ]
