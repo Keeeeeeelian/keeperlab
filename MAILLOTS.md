@@ -1,21 +1,22 @@
-# Espace Maillots
+# Maillots dans le catalogue Textile
 
-`maillots.html` charge uniquement `data/maillots.json` via `maillots.js`.
-Les données, filtres et cartes sont indépendants du catalogue gardien.
-Ne pas ajouter ces maillots dans `data/products.json`.
+Le catalogue charge data/products.json et data/maillots.json via catalogue.js.
+Les maillots sont classés dans Textile au chargement ; leurs données restent
+exclusivement dans data/maillots.json.
 
-Pour ajouter un maillot, ajouter un objet au tableau JSON avec un identifiant
-unique et les champs `id`, `club`, `name`, `type`, `season`, `sizes`, `merchant`,
-`affiliateUrl` et `image`. Les types sont `domicile`, `exterieur` et `third`.
-Les clubs du filtre sont calculés automatiquement à partir des données.
+Les filtres Club et Tenue sont disponibles dans Tout et Textile et se combinent
+avec la recherche. Ils sont réinitialisés lors du passage à une autre catégorie.
+Les clubs sont calculés automatiquement à partir des données.
+
+Pour ajouter un maillot, ajouter un objet avec un identifiant unique et les champs
+id, club, name, type, season, sizes, merchant, affiliateUrl et image.
+Les types sont domicile, exterieur et third. Fournir le chemin du visuel dans image.
+Le champ optionnel detailUrl pointe vers une fiche individuelle existante.
 
 Conserver les URLs Awin exactement telles que fournies, sans décoder ni réencoder
-la destination. Les liens sont construits avec `setAttribute` et portent
-`target="_blank"` et `rel="sponsored noopener noreferrer"`.
+la destination. Les liens partenaires ouvrent un nouvel onglet et portent
+rel="sponsored noopener noreferrer". Aucun prix ni score n'est inventé.
 
-Laisser `image` à `null` tant que le visuel n'a pas été fourni. Le placeholder
-KeeperLab est alors affiché ; une image qui échoue à charger utilise aussi ce
-placeholder. Ajouter ensuite le chemin réel de l'image dans le JSON suffit.
-
-Aucun prix, stock, remise, fiche individuelle ou score n'est calculé.
-Le chargement utilise un chemin relatif compatible avec GitHub Pages.
+L'ancienne page maillots.html redirige vers catalogue.html?category=textile,
+avec un lien de secours. Les fiches individuelles sont conservées.
+Les anciens fichiers maillots.js et maillots.css ne sont plus chargés.
