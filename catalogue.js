@@ -1,8 +1,6 @@
 const names={all:"Tout",gants:"Gants",chaussures:"Chaussures",textile:"Textile",protections:"Protections"};
 const grid=document.querySelector("#catalogue-grid"),count=document.querySelector("#catalogue-count"),search=document.querySelector("#catalogue-search"),filters=document.querySelector("#catalogue-filters");
 document.head.insertAdjacentHTML("beforeend",'<link rel="stylesheet" href="finder.css">');
-const catalogueNav=document.querySelector(".site-header nav");
-if(catalogueNav&&!catalogueNav.querySelector('[href="trouve-ton-gant.html"]'))catalogueNav.querySelector('[href="catalogue.html"]').insertAdjacentHTML("afterend",'<a href="trouve-ton-gant.html">Trouve ton gant</a>');
 let products=[],active=new URLSearchParams(location.search).get("category")||"all";
 const textileFilters=document.querySelector('#catalogue-textile-filters'),club=document.querySelector('#catalogue-club'),equipmentType=document.querySelector('#catalogue-equipment-type'),clubFilter=document.querySelector('#catalogue-club-filter');
 const equipmentNames={'maillots-foot':'Maillots de foot','hauts-gardien':'Hauts gardien','bas-gardien':'Bas gardien','ensembles-gardien':'Ensembles gardien','sous-couches':'Sous-couches','autres-textiles':'Autres textiles'};

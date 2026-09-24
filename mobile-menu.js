@@ -18,7 +18,17 @@
   menu.setAttribute('aria-modal', 'true');
   menu.setAttribute('role', 'dialog');
   menu.hidden = true;
-  menu.innerHTML = '<div class="mobile-menu__top"><a class="mobile-menu__logo" href="/" aria-label="KeeperLab, accueil"><span>KEEPER</span>LAB<i></i></a><button class="mobile-menu__close" type="button" aria-label="Fermer le menu">✕</button></div><nav class="mobile-menu__links" aria-label="Navigation mobile"><a href="catalogue.html">CATALOGUE</a><a class="mobile-menu__comparator" href="comparateur.html">COMPARATEUR</a><a href="catalogue.html?category=gants">TROUVE TON GANT</a><a href="articles.html">ARTICLES / BLOG</a><a href="a-propos.html">À PROPOS</a></nav><div class="mobile-menu__bottom"><a class="mobile-menu__cta" href="catalogue.html?category=gants">🧤 TROUVE TON GANT <span aria-hidden="true">→</span></a><p class="mobile-menu__tagline">GEAR. COMPARE. SAVE.</p></div>';
+  menu.innerHTML = '<div class="mobile-menu__top"><a class="mobile-menu__logo" href="/" aria-label="KeeperLab, accueil"><span>KEEPER</span>LAB<i></i></a><button class="mobile-menu__close" type="button" aria-label="Fermer le menu">✕</button></div><nav class="mobile-menu__links" aria-label="Navigation mobile"></nav><div class="mobile-menu__bottom"><a class="mobile-menu__cta" href="trouve-ton-gant.html">🧤 TROUVE TON GANT <span aria-hidden="true">→</span></a><p class="mobile-menu__tagline">GEAR. COMPARE. SAVE.</p></div>';
+
+  // Reuse the desktop links so both menus always have the same destinations and labels.
+  const mobileLinks = menu.querySelector('.mobile-menu__links');
+  header.querySelectorAll('nav a').forEach(source => {
+    const link = source.cloneNode(true);
+    if (link.classList.contains('nav-comparator')) {
+      link.classList.replace('nav-comparator', 'mobile-menu__comparator');
+    }
+    mobileLinks.append(link);
+  });
 
   header.append(toggle);
   document.body.append(menu);
