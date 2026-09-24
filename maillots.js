@@ -21,6 +21,14 @@
     article.querySelector('.maillot-sizes').textContent = `Tailles : ${maillot.sizes.join(' · ')}`;
     article.querySelector('.maillot-merchant').textContent = `Boutique : ${maillot.merchant}`;
 
+    if (typeof maillot.detailUrl === 'string' && /^maillot-[a-z0-9-]+\.html$/.test(maillot.detailUrl)) {
+      const detail = document.createElement('a');
+      detail.className = 'maillot-detail';
+      detail.href = maillot.detailUrl;
+      detail.textContent = 'Détails du maillot';
+      detail.setAttribute('aria-label', 'Détails — ' + maillot.name);
+      article.querySelector('.maillot-copy').append(detail);
+    }
     const link = article.querySelector('.maillot-affiliate');
     // Preserve the supplied Awin URL verbatim, including its encoded destination.
     link.setAttribute('href', maillot.affiliateUrl);

@@ -16,7 +16,8 @@
     ],
     "merchant": "FansJerseyHub",
     "affiliateUrl": "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3056435&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Flos-blancos-home-player-version-soccer-jersey-2026-27-white%3F_pos%3D1%26_sid%3D5935fb8ca%26_ss%3Dr",
-    "image": "assets/maillots/real-madrid-domicile-2026-27.webp"
+    "image": "assets/maillots/real-madrid-domicile-2026-27.webp",
+    "detailUrl": "maillot-real-madrid-domicile-2026-27.html"
   },
   {
     "id": "real-madrid-exterieur-2026-27",
@@ -73,7 +74,8 @@
     ],
     "merchant": "FansJerseyHub",
     "affiliateUrl": "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3056435&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fpsg-home-player-version-soccer-jersey-2026-27%3F_pos%3D14%26_sid%3D59693bea7%26_ss%3Dr",
-    "image": "assets/maillots/psg-domicile-2026-27.webp"
+    "image": "assets/maillots/psg-domicile-2026-27.webp",
+    "detailUrl": "maillot-psg-domicile-2026-27.html"
   },
   {
     "id": "psg-exterieur-2026-27",
@@ -149,7 +151,8 @@
     ],
     "merchant": "FansJerseyHub",
     "affiliateUrl": "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3056435&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fbarcelona-home-player-version-soccer-jersey-2026-27%3F_pos%3D1%26_sid%3Db36d4354b%26_ss%3Dr",
-    "image": "assets/maillots/barcelona-domicile-2026-27.webp"
+    "image": "assets/maillots/barcelona-domicile-2026-27.webp",
+    "detailUrl": "maillot-barcelona-domicile-2026-27.html"
   },
   {
     "id": "barcelona-exterieur-2026-27",
@@ -244,7 +247,8 @@
     ],
     "merchant": "FansJerseyHub",
     "affiliateUrl": "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3056435&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fmanchester-city-home-soccer-jersey-2026-27%3F_pos%3D3%26_sid%3Dcd54819d4%26_ss%3Dr",
-    "image": "assets/maillots/manchester-city-domicile-2026-27.webp"
+    "image": "assets/maillots/manchester-city-domicile-2026-27.webp",
+    "detailUrl": "maillot-manchester-city-domicile-2026-27.html"
   },
   {
     "id": "manchester-city-exterieur-2026-27",
