@@ -26,6 +26,8 @@
     <link rel="stylesheet" href="fixes.css" />
     <link rel="stylesheet" href="finder.css" />
     <link rel="stylesheet" href="mobile-menu.css" />
+    <link rel="stylesheet" href="hero-carousel.css" />
+    <script defer src="hero-carousel.js"></script>
   </head>
   <body>
     <div class="topbar">Livraison, paiement & retours sont assurés par nos partenaires <a href="#transparence">En savoir plus</a></div>
@@ -82,21 +84,32 @@
 
       <section class="featured" id="selection">
         <div class="featured-head"><div><p class="eyebrow">SÉLECTION KEEPERLAB</p><h2>LES OFFRES QUI <em>TIENNENT LA ROUTE.</em></h2></div><a class="text-link" href="#equipement">Tout voir <span>→</span></a></div>
-        <div class="product-grid">
-          <article class="product-card">
-            <div class="product-image glove-image"><span class="product-tag">MEILLEUR CHOIX</span><span class="brand">REUSCH</span></div>
-            <div class="product-info"><p>Gants de match</p><h3>Attrakt Gold X Evolution</h3><div><strong>CHF 119.90</strong><span class="old-price">CHF 139.90</span></div><a href="https://www.sportisgood.ch/" target="_blank" rel="noopener sponsored">Voir l’offre <span>↗</span></a></div>
+        <section class="gear-carousel" aria-roledescription="carrousel" aria-label="Sélection de gants et maillots">
+          <div class="gear-heading"><span>SÉLECTION KEEPERLAB</span><span>GANTS &amp; MAILLOTS</span></div>
+          <div class="gear-slides" id="gear-slides" aria-live="off">
+          <article class="gear-slide" role="group" aria-roledescription="diapositive" aria-label="1 sur 4">
+            <div class="gear-image" data-number="01"><img src="https://assets.adidas.com/images/w_500,f_auto,q_auto/757a287ae7da4312b62a1265183732d1_9366/Gant_de_gardien_de_but_Predator_Pro_a_coupe_hybride_et_sangle_Rose_KE9725_01_00_standard.jpg" alt="adidas Predator Pro Hybrid Strap — Solar Turbo / Black / White" width="500" height="500" fetchpriority="high" /></div>
+            <div class="gear-details"><p class="gear-category">ADIDAS · COUPE HYBRIDE</p><h2>adidas Predator Pro Hybrid Strap</h2><a class="gear-link" href="https://keeperlab.ch/adidas-predator-pro-hybrid-strap.html">Découvrir la fiche <span aria-hidden="true">↗</span></a></div>
           </article>
-          <article class="product-card">
-            <div class="product-image shoe-image"><span class="product-tag dark">TOP RAPPORT QUALITÉ / PRIX</span><span class="brand">ADIDAS</span></div>
-            <div class="product-info"><p>Chaussures terrain sec</p><h3>Copa Pure 2 League FG</h3><div><strong>CHF 79.90</strong><span class="old-price">CHF 100.00</span></div><a href="https://www.adidas.ch/" target="_blank" rel="noopener sponsored">Voir l’offre <span>↗</span></a></div>
+          <article class="gear-slide" role="group" aria-roledescription="diapositive" aria-label="2 sur 4" hidden>
+            <div class="gear-image" data-number="02"><img src="https://assets.adidas.com/images/w_500,f_auto,q_auto/390ce83f21e9409196725c0afe970ed5_9366/Gants_Gardien_de_but_Predator_Competition_Blanc_KE9718_21_model.jpg" alt="adidas Predator Competition — White / Black / Solar Turbo" width="500" height="500" loading="lazy" /></div>
+            <div class="gear-details"><p class="gear-category">ADIDAS · URG 2.0</p><h2>adidas Predator Competition</h2><a class="gear-link" href="https://keeperlab.ch/adidas-predator-competition.html">Découvrir la fiche <span aria-hidden="true">↗</span></a></div>
           </article>
-          <article class="product-card">
-            <div class="product-image shirt-image"><span class="product-tag">VALIDÉ PAR LE LAB</span><span class="brand">UHLSport</span></div>
-            <div class="product-info"><p>Maillot gardien</p><h3>Score Goalkeeper Set</h3><div><strong>CHF 54.90</strong></div><a href="https://www.sportisgood.ch/" target="_blank" rel="noopener sponsored">Voir l’offre <span>↗</span></a></div>
+          <article class="gear-slide" role="group" aria-roledescription="diapositive" aria-label="3 sur 4" hidden>
+            <div class="gear-image" data-number="03"><img src="https://assets.adidas.com/images/w_500,f_auto,q_auto/dead57e37a6045698793a8a7029714e8_9366/Gants_Gardien_de_but_Predator_Match_Fingersave_Blanc_KE9702_21_model.jpg" alt="adidas Predator Match Fingersave — White / Black / Solar Turbo" width="500" height="500" loading="lazy" /></div>
+            <div class="gear-details"><p class="gear-category">ADIDAS · FINGERSAVE</p><h2>adidas Predator Match Fingersave</h2><a class="gear-link" href="https://keeperlab.ch/adidas-predator-match-fingersave.html">Découvrir la fiche <span aria-hidden="true">↗</span></a></div>
           </article>
-        </div>
-        <p class="price-note">Prix indicatifs relevés chez nos partenaires. Ils peuvent évoluer.</p>
+          <article class="gear-slide" role="group" aria-roledescription="diapositive" aria-label="4 sur 4" hidden>
+            <div class="gear-image" data-number="04"><img src="assets/maillots/arsenal-domicile-2026-27.webp" alt="Maillot Arsenal FC Domicile 2026/27" width="600" height="600" loading="lazy" /></div>
+            <div class="gear-details"><p class="gear-category">MAILLOT · ARSENAL · DOMICILE</p><h2>Maillot Arsenal FC Domicile 2026/27</h2><a class="gear-link" href="https://www.awin1.com/cread.php?awinmid=126139&amp;awinaffid=3056435&amp;ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Farsenal-home-player-version-soccer-jersey-2026-27%3F_pos%3D4%26_sid%3D7b7d8795e%26_ss%3Dr" target="_blank" rel="sponsored noopener noreferrer">Voir chez le partenaire <span aria-hidden="true">↗</span><span class="sr-only"> (nouvel onglet, lien affilié)</span></a></div>
+          </article>
+          </div>
+          <div class="gear-controls" hidden>
+            <button class="gear-toggle" type="button" aria-controls="gear-slides">Mettre en pause</button>
+            <div class="gear-navigation"><button type="button" class="gear-prev" aria-label="Produit précédent" aria-controls="gear-slides"><span aria-hidden="true">←</span></button><span class="gear-count" aria-hidden="true">01 / 04</span><button type="button" class="gear-next" aria-label="Produit suivant" aria-controls="gear-slides"><span aria-hidden="true">→</span></button></div>
+          </div>
+        </section>
+        <p class="price-note">Consultez les fiches et les boutiques partenaires pour connaître les prix et disponibilités à jour.</p>
       </section>
 
       <section class="editorial" id="comparatifs">
