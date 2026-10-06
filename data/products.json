@@ -329,5 +329,122 @@
     "description": "Kit genoux et coudes pour les séances sur surface dure.",
     "affiliateUrl": "https://www.sportisgood.ch/",
     "image": "https://images.unsplash.com/photo-1574629810360-7efbbe195018?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": "adidas-predator-pro-hybrid-strap-ke9725",
+    "name": "adidas Predator Pro Hybrid Strap",
+    "brand": "adidas",
+    "category": "gants",
+    "productPage": "adidas-predator-pro-hybrid-strap.html",
+    "modelCode": "KE9725",
+    "color": "Solar Turbo / Black / White",
+    "price": 160,
+    "priceCheckedAt": "2026-10-06",
+    "originalPrice": null,
+    "badge": "COUPE HYBRIDE",
+    "description": "Coupe hybride, paume URG 2.0+ et sangle élastique ajustable.",
+    "affiliateUrl": null,
+    "sourceUrl": "https://www.adidas.ch/fr/gant-de-gardien-de-but-predator-pro-a-coupe-hybride-et-sangle/KE9725.html",
+    "verifiedAt": "2026-10-06",
+    "availability": {
+      "checkedAt": "2026-10-06",
+      "selectableSizes": [
+        "7",
+        "7 ½",
+        "8",
+        "12"
+      ],
+      "note": "Tailles sélectionnables sur Adidas CH lors du relevé ; stock à revérifier."
+    },
+    "image": "https://assets.adidas.com/images/w_500,f_auto,q_auto/757a287ae7da4312b62a1265183732d1_9366/Gant_de_gardien_de_but_Predator_Pro_a_coupe_hybride_et_sangle_Rose_KE9725_01_00_standard.jpg",
+    "specs": {
+      "cut": "Hybride",
+      "latex": "URG 2.0+",
+      "closure": "Sangle élastique ajustable",
+      "keeperlabScore": null
+    }
+  },
+  {
+    "id": "adidas-predator-competition-ke9718",
+    "name": "adidas Predator Competition",
+    "brand": "adidas",
+    "category": "gants",
+    "productPage": "adidas-predator-competition.html",
+    "modelCode": "KE9718",
+    "color": "White / Black / Solar Turbo",
+    "price": 110,
+    "priceCheckedAt": "2026-10-06",
+    "originalPrice": null,
+    "badge": "URG 2.0",
+    "description": "Coupe négative, paume URG 2.0 et dos en tissu Mechano.",
+    "affiliateUrl": null,
+    "sourceUrl": "https://www.adidas.ch/fr/gants-gardien-de-but-predator-competition/KE9718.html",
+    "verifiedAt": "2026-10-06",
+    "availability": {
+      "checkedAt": "2026-10-06",
+      "selectableSizes": [
+        "5",
+        "5 ½",
+        "6",
+        "6 ½",
+        "7",
+        "7 ½",
+        "8",
+        "8 ½",
+        "11",
+        "11 ½",
+        "12"
+      ],
+      "note": "Tailles sélectionnables sur Adidas CH lors du relevé ; stock à revérifier."
+    },
+    "image": "https://assets.adidas.com/images/w_500,f_auto,q_auto/390ce83f21e9409196725c0afe970ed5_9366/Gants_Gardien_de_but_Predator_Competition_Blanc_KE9718_21_model.jpg",
+    "specs": {
+      "cut": "Négative",
+      "latex": "URG 2.0",
+      "closure": "Serre-poignet enveloppant",
+      "keeperlabScore": null
+    }
+  },
+  {
+    "id": "adidas-predator-match-fingersave-ke9702",
+    "name": "adidas Predator Match Fingersave",
+    "brand": "adidas",
+    "category": "gants",
+    "productPage": "adidas-predator-match-fingersave.html",
+    "modelCode": "KE9702",
+    "color": "White / Black / Solar Turbo",
+    "price": 75,
+    "priceCheckedAt": "2026-10-06",
+    "originalPrice": null,
+    "badge": "FINGERSAVE",
+    "description": "Coupe plate à coutures positives, paume Soft Grip Pro et renforts Fingersave.",
+    "affiliateUrl": null,
+    "sourceUrl": "https://www.adidas.ch/fr/gants-gardien-de-but-predator-match-fingersave/KE9702.html",
+    "verifiedAt": "2026-10-06",
+    "availability": {
+      "checkedAt": "2026-10-06",
+      "selectableSizes": [
+        "7",
+        "7 ½",
+        "8",
+        "8 ½",
+        "9",
+        "9 ½",
+        "10",
+        "10 ½",
+        "11",
+        "11 ½",
+        "12"
+      ],
+      "note": "Tailles sélectionnables sur Adidas CH lors du relevé ; stock à revérifier."
+    },
+    "image": "https://assets.adidas.com/images/w_500,f_auto,q_auto/dead57e37a6045698793a8a7029714e8_9366/Gants_Gardien_de_but_Predator_Match_Fingersave_Blanc_KE9702_21_model.jpg",
+    "specs": {
+      "cut": "Positive (coupe plate)",
+      "latex": "Soft Grip Pro",
+      "closure": "Serre-poignet à demi-bande",
+      "keeperlabScore": null,
+      "fingerProtection": true
+    }
   }
 ]

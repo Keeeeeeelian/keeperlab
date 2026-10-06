@@ -19,7 +19,7 @@
     if (v === null || v === undefined || v === '' || (Array.isArray(v) && !v.length)) return 'Non renseigné';
     if (key === 'price') {
       if (typeof v !== 'number' || !Number.isFinite(v)) return 'Non renseigné';
-      try { return new Intl.NumberFormat('fr-CH', {style: 'currency', currency: p.currency || 'CHF'}).format(v); }
+      try { return new Intl.NumberFormat('fr-CH', {style: 'currency', currency: p.currency || 'CHF'}).format(v) + (p.priceCheckedAt ? ' (relevé le ' + new Date(p.priceCheckedAt+'T12:00:00Z').toLocaleDateString('fr-CH') + ')' : ''); }
       catch { return 'Non renseigné'; }
     }
     if (typeof v === 'boolean') return v ? 'Oui' : 'Non';
