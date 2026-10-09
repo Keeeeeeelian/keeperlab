@@ -1,11 +1,7 @@
 <!doctype html>
 <html lang="fr">
   <head>
-    <script
-      defer
-      src="https://cloud.umami.is/script.js"
-      data-website-id="c8ce7437-1e59-4e97-854e-5eff5654879c"
-    ></script>
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
@@ -59,19 +55,19 @@
     </script>
     <title>Comparateur d’équipement de gardien de football | KeeperLab</title>
     <link rel="icon" type="image/png" href="logo_transparent.png" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
+
+
+
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="fixes.css" />
     <link rel="stylesheet" href="finder.css" />
     <link rel="stylesheet" href="mobile-menu.css" />
     <link rel="stylesheet" href="hero-carousel.css" />
     <script defer src="hero-carousel.js"></script>
-  </head>
+  <link rel="stylesheet" href="/fonts.css">
+<link rel="stylesheet" href="/privacy.css">
+<script defer src="/privacy.js"></script>
+</head>
   <body>
     <div class="topbar"
       >Livraison, paiement & retours sont assurés par nos partenaires
@@ -373,22 +369,11 @@
           <h2>LES BONNES OFFRES.<br /><em>PAS LE BRUIT.</em></h2>
         </div>
         <div class="newsletter-form">
-          <div
-            id="error-message"
-            class="sib-form-message-panel newsletter-message newsletter-message-error"
-            >Nous n’avons pas pu confirmer votre inscription. Vérifiez votre
-            adresse e-mail.</div
-          >
-          <div
-            id="success-message"
-            class="sib-form-message-panel newsletter-message newsletter-message-success"
-            >Votre inscription est confirmée.</div
-          >
           <form
             id="sib-form"
             method="POST"
-            action="https://b6011710.sibforms.com/v2/serve/MUIFANVUyyAFTW8Slmjc8NJSENUXzCEtfQzOPANmpadcKIHNLXm5j4uECPhgBdMaBzw5rK01qezuFXjTCwORRhfaCAhtRDnpsHvWYABgY2n1EYY8r3BEHkyTmoH6h5KexVuzeArzy_kVmFo8mCwemIiguzbKLvklvVA11ZhC91vk8Mt4pjsKejfCF-rTAv5Te0cZMRC-b6CQxkXVAQ=="
-            data-type="subscription"
+            action="https://b6011710.sibforms.com/serve/MUIFANVUyyAFTW8Slmjc8NJSENUXzCEtfQzOPANmpadcKIHNLXm5j4uECPhgBdMaBzw5rK01qezuFXjTCwORRhfaCAhtRDnpsHvWYABgY2n1EYY8r3BEHkyTmoH6h5KexVuzeArzy_kVmFo8mCwemIiguzbKLvklvVA11ZhC91vk8Mt4pjsKejfCF-rTAv5Te0cZMRC-b6CQxkXVAQ=="
+            data-type="subscription" aria-describedby="newsletter-privacy"
           >
             <label class="sr-only" for="EMAIL">Votre adresse e-mail</label>
             <div class="newsletter-field">
@@ -409,9 +394,11 @@
                 >Je m’inscris →</button
               >
             </div>
-            <p
-              class="entry__error entry__error--primary newsletter-field-error"
-            ></p>
+            <label class="newsletter-consent" for="newsletter-opt-in">
+              <input id="newsletter-opt-in" name="OPT_IN" type="checkbox" value="1" required>
+              <span>Je souhaite recevoir par e-mail les conseils, actualités et offres de KeeperLab, environ une fois par mois. Je peux me désinscrire à tout moment.</span>
+            </label>
+            <p id="newsletter-privacy" class="newsletter-privacy">En vous inscrivant, votre adresse e-mail et votre accord sont transmis à Brevo pour gérer la newsletter. Vous recevrez un e-mail pour confirmer votre inscription. <a href="/mentions-legales.html#newsletter">Confidentialité et droits</a>.</p>
             <input
               type="text"
               name="email_address_check"
@@ -436,23 +423,7 @@
       ><small
         >KeeperLab est un site comparateur affilié. Certains liens peuvent nous
         rapporter une commission, sans coût supplémentaire pour vous.</small
-      ><small>© 2026 KeeperLab · Suisse</small></footer
-    >
-    <script>
-      window.REQUIRED_CODE_ERROR_MESSAGE = "Veuillez choisir un code pays";
-      window.LOCALE = "fr";
-      window.EMAIL_INVALID_MESSAGE =
-        "Veuillez saisir une adresse e-mail valide.";
-      window.SMS_INVALID_MESSAGE = window.EMAIL_INVALID_MESSAGE;
-      window.REQUIRED_ERROR_MESSAGE = "Vous devez renseigner ce champ.";
-      window.GENERIC_INVALID_MESSAGE =
-        "Les informations fournies ne sont pas valides.";
-      window.AUTOHIDE = false;
-    </script>
-    <script
-      defer
-      src="https://sibforms.com/forms/end-form/build/main.js"
-    ></script>
+      ><small>© 2026 KeeperLab · Suisse</small><a href="/mentions-legales.html#statistiques" data-privacy-settings>Confidentialité &amp; choix</a></footer>
     <script src="mobile-menu.js"></script
   ></body>
 </html>

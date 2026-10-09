@@ -1,0 +1,17 @@
+.privacy-panel{position:fixed;z-index:100;bottom:18px;left:18px;right:18px;max-width:680px;margin:0 auto;padding:24px;background:#fff;color:#0b0d0b;border:2px solid #0b0d0b;box-shadow:0 8px 40px #0003;max-height:calc(100dvh - 36px);overflow:auto;font:13px/1.55 Montserrat,Arial,sans-serif}
+.privacy-panel[hidden]{display:none}
+.privacy-panel h2{font-size:30px;line-height:1.1;margin:0 0 12px}
+.privacy-panel p{margin:10px 0}
+.privacy-panel a,.newsletter-privacy a{text-decoration:underline;text-underline-offset:3px}
+.privacy-actions{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:16px 0}
+.privacy-actions button{padding:13px 15px;background:#d8ff38;color:#0b0d0b;border:1px solid #0b0d0b;font:700 12px/1.4 Montserrat,Arial,sans-serif;cursor:pointer;min-height:48px}
+.privacy-actions button:hover{background:#e8ff91}
+.privacy-actions button:disabled{opacity:.55;cursor:not-allowed}
+.privacy-panel :focus-visible,[data-privacy-settings]:focus-visible{outline:3px solid #638300;outline-offset:3px}
+.privacy-detail{font-size:11px}
+.privacy-status:empty{display:none}
+.newsletter-form form{display:block}
+.newsletter-consent{display:flex;align-items:flex-start;gap:10px;margin:16px 0 10px;font-size:12px;line-height:1.6;cursor:pointer}
+.newsletter .newsletter-consent input{appearance:auto;flex:0 0 auto;width:18px;height:18px;margin:3px 0 0;padding:0;accent-color:#0b0d0b}
+.newsletter-privacy{font-size:11px;line-height:1.6;margin:10px 0}
+@media(max-width:480px){.privacy-panel{bottom:10px;left:10px;right:10px;padding:18px;max-height:calc(100dvh - 20px)}.privacy-actions{grid-template-columns:1fr}.privacy-panel h2{font-size:27px}}
