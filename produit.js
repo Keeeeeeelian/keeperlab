@@ -37,98 +37,28 @@ function updateProductSeo(p) {
   setMeta('meta[property="og:image"]', "content", p.image);
   setMeta('meta[name="twitter:card"]', "content", "summary_large_image");
 }
-const info = {
-  gants: {
-    sizes: ["7", "8", "9", "10", "11"],
-    specs: [
-      ["Coupe", "Négative / ajustée"],
-      ["Paume", "GripCore 4 mm"],
-      ["Usage", "Match & entraînement"],
-    ],
-  },
-  chaussures: {
-    sizes: ["40", "41", "42", "43", "44", "45"],
-    specs: [
-      ["Surface", "À choisir selon le modèle"],
-      ["Maintien", "Talon renforcé"],
-      ["Usage", "Match & entraînement"],
-    ],
-  },
-  textile: {
-    sizes: ["S", "M", "L", "XL", "XXL"],
-    specs: [
-      ["Coupe", "Athlétique"],
-      ["Matière", "Tissu technique respirant"],
-      ["Usage", "Match & échauffement"],
-    ],
-  },
-  protections: {
-    sizes: ["S", "M", "L", "XL"],
-    specs: [
-      ["Protection", "Mousse souple ciblée"],
-      ["Maintien", "Bande élastique"],
-      ["Usage", "Entraînement & match"],
-    ],
-  },
-};
-function show(p) {
-  const d = info[p.category],
-    old = p.originalPrice ? "<del>" + money(p.originalPrice) + "</del>" : "";
-  document.title = p.name + " — KeeperLab";
-  updateProductSeo(p);
-  root.innerHTML =
-    '<section class="product-detail"><a class="back-link" href="catalogue.html">← Retour au catalogue</a><div class="product-detail-grid"><div class="product-detail-image" style="background-image:url(' +
-    p.image +
-    ')"><span>' +
-    p.badge +
-    "</span><b>" +
-    p.brand +
-    '</b></div><div class="product-detail-copy"><p class="eyebrow">' +
-    p.category.toUpperCase() +
-    " · " +
-    p.brand +
-    "</p><h1>" +
-    p.name +
-    '</h1><p class="product-detail-description">' +
-    p.description +
-    ' Conçu pour accompagner les gardiens qui recherchent confort, contrôle et régularité dans leurs séances comme en match.</p><div class="product-detail-price"><strong>' +
-    money(p.price) +
-    "</strong>" +
-    old +
-    "</div>" +
-    (p.category === "gants"
-      ? '<a class="product-compare-button" href="comparateur.html?left=' +
-        encodeURIComponent(p.id) +
-        '">Comparer ce gant <span aria-hidden="true">→</span></a>'
-      : "") +
-    '<div class="size-block"><span>TAILLE</span><div>' +
-    d.sizes.map((s) => '<button type="button">' + s + "</button>").join("") +
-    '</div><small>Choisissez votre taille sur le site du partenaire avant achat.</small></div><a class="affiliate-button" href="' +
-    p.affiliateUrl +
-    '" target="_blank" rel="noopener sponsored">Voir l’offre chez le partenaire <i>↗</i></a><p class="affiliate-note">Vous serez redirigé vers le revendeur. KeeperLab ne gère ni paiement ni livraison.</p></div></div><section class="product-specs"><h2>LES DÉTAILS <em>ESSENTIELS.</em></h2><div>' +
-    d.specs
-      .map(
-        (x) =>
-          "<article><span>" +
-          x[0] +
-          "</span><strong>" +
-          x[1] +
-          "</strong></article>",
-      )
-      .join("") +
-    "</div></section></section>";
+
+const esc=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const labels={cut:'Coupe',latex:'Latex / paume',grip:'Adhérence',durability:'Durabilité',terrain:'Terrain',conditions:'Conditions',fit:'Ajustement',closure:'Fermeture',sizes:'Tailles proposées',fingerProtection:'Protection des doigts',surface:'Surface / semelle',metalStuds:'Crampons métalliques',material:'Matière',keeperlabScore:'Note KeeperLab'};
+async function show(p){
+ document.title=p.name+' — KeeperLab';updateProductSeo({...p,description:p.description||p.name});
+ const specs={...p.specs};if(p.modelCode)specs['Référence fabricant']=p.modelCode;if(p.color)specs['Coloris']=p.color;if(p.club)specs['Club']=p.club;if(p.season)specs['Saison']=p.season;if(p.sizes&&!specs.sizes)specs.sizes=p.sizes;
+ const rows=Object.entries(specs).filter(([,v])=>v!=null&&v!=='').map(([key,v])=>'<article><span>'+esc(labels[key]||key)+'</span><strong>'+esc(Array.isArray(v)?v.join(' · '):typeof v==='boolean'?v?'Oui':'Non':v)+'</strong></article>').join('');
+ const available=p.availability?.selectableSizes;
+ const sizes=available||p.specs?.sizes||p.sizes||[];
+ const buy=p.affiliateUrl||p.sourceUrl;
+ const images=[...new Set([p.image,...(p.images||[]).map(x=>typeof x==='string'?x:x.url)].filter(Boolean))];
+ root.innerHTML='<section class="product-detail"><a class="back-link" href="catalogue.html?category='+encodeURIComponent(p.category)+'">← Retour au catalogue</a><div class="product-detail-grid"><div class="product-gallery"><div class="product-detail-image"><img id="product-photo" src="'+esc(images[0])+'" alt="'+esc(p.name)+'"></div>'+(images.length>1?'<div class="product-thumbnails">'+images.map((src,i)=>'<button type="button" data-photo="'+esc(src)+'" aria-label="Photo '+(i+1)+'" aria-pressed="'+(i===0)+'"><img src="'+esc(src)+'" alt=""></button>').join('')+'</div>':'')+'</div><div class="product-detail-copy"><p class="eyebrow">'+esc(p.category)+' · '+esc(p.brand||p.club||'')+'</p><h1>'+esc(p.name)+'</h1><p class="product-detail-description">'+esc(p.description||'')+'</p><div class="product-detail-price">'+(Number.isFinite(p.price)?'<strong>'+money(p.price)+'</strong>'+(Number.isFinite(p.originalPrice)?'<del>'+money(p.originalPrice)+'</del>':'')+(p.priceCheckedAt?'<p>Prix relevé le '+esc(new Date(p.priceCheckedAt+'T12:00:00Z').toLocaleDateString('fr-CH'))+'</p>':''):'<p>Prix à consulter chez le fournisseur</p>')+'</div><div class="size-block"><span>'+ (available?'TAILLES DISPONIBLES AU DERNIER RELEVÉ':'TAILLES PROPOSÉES')+'</span><div>'+sizes.map(s=>'<span class="product-size">'+esc(s)+'</span>').join('')+'</div><small>'+esc(available?'Relevé du '+(p.availability.checkedAt||'date non renseignée')+'. Stock à revérifier chez le fournisseur.':sizes.length?'Disponibilité à vérifier chez le fournisseur.':'Tailles non renseignées. Consultez le fournisseur.')+'</small></div>'+(buy?'<a class="affiliate-button" href="'+esc(buy)+'" target="_blank" rel="'+(p.affiliateUrl?'sponsored ':'')+'noopener noreferrer">Acheter <span aria-hidden="true">↗</span></a><p class="affiliate-note">Achat chez '+esc(p.merchant||'le fournisseur')+'. Le prix final, la taille et la disponibilité sont à confirmer sur son site.</p>':'<p>Offre fournisseur indisponible pour le moment.</p>')+(p.category==='gants'?'<a class="product-compare-button" href="comparateur.html?left='+encodeURIComponent(p.id)+'">Comparer ce gant →</a>':'')+'</div></div><section class="product-specs"><h2>FICHE <em>TECHNIQUE.</em></h2><div>'+ (rows||'<p>Caractéristiques non renseignées pour ce produit.</p>')+'</div><div id="product-technical-details" class="product-technical-details"></div></section></section>';
+ root.querySelectorAll('[data-photo]').forEach(button=>button.addEventListener('click',()=>{root.querySelector('#product-photo').src=button.dataset.photo;root.querySelectorAll('[data-photo]').forEach(b=>b.setAttribute('aria-pressed',String(b===button)));}));
+ if(p.productPage){try{
+ const response=await fetch(p.productPage);if(!response.ok)return;
+ const doc=new DOMParser().parseFromString(await response.text(),'text/html');
+ const target=root.querySelector('#product-technical-details');
+ // Preserve the existing manufacturer specifications, composition and care details.
+ doc.querySelectorAll('.product-content > section').forEach(section=>{if(section.id==='caracteristiques'||section.querySelector('.product-composition,.product-care')&&!section.hasAttribute('aria-label')){const clone=section.cloneNode(true);clone.querySelectorAll('script').forEach(s=>s.remove());clone.querySelectorAll('.product-specs').forEach(s=>s.className='technical-definition');target.appendChild(clone);}});
+ }catch{/* The structured technical sheet remains available offline. */}}
 }
-fetch("data/products.json")
-  .then((r) => r.json())
-  .then((items) => {
-    const p = items.find((x) => x.id === id);
-    if (p?.productPage) location.replace(p.productPage);
-    else if (p) show(p);
-    else
-      root.innerHTML =
-        '<section class="product-not-found"><h1>PRODUIT <em>INTROUVABLE.</em></h1><a class="button button-primary" href="catalogue.html">Retour au catalogue →</a></section>';
-  })
-  .catch(() => {
-    root.innerHTML =
-      '<p class="catalog-empty">Le produit est momentanément indisponible.</p>';
-  });
+Promise.all(['data/products.json','data/maillots.json'].map(async url=>{const response=await fetch(url);if(!response.ok)throw Error('Chargement');return response.json();})).then(([equipment,jerseys])=>{
+ const p=[...equipment,...jerseys.map(p=>({...p,category:'textile'}))].find(p=>p.id===id);
+ if(p)show(p);else root.innerHTML='<section class="product-not-found"><h1>PRODUIT INTROUVABLE.</h1><a href="catalogue.html">Retour au catalogue</a></section>';
+}).catch(()=>{root.innerHTML='<p class="catalog-empty">Le produit est momentanément indisponible.</p>';});
