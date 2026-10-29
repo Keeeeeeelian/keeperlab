@@ -4,6 +4,7 @@ const names = {
   chaussures: "Chaussures",
   textile: "Textile",
   protections: "Protections",
+  accessoires: "Accessoires",
 };
 const grid = document.querySelector("#catalogue-grid"),
   count = document.querySelector("#catalogue-count"),
@@ -65,7 +66,7 @@ if (!Object.hasOwn(names, active)) active = "all";
 const price = value => new Intl.NumberFormat('fr-CH',{style:'currency',currency:'CHF'}).format(value);
 function card(p) {
  const url='produit.html?id='+encodeURIComponent(p.id);
- return '<article class="catalog-product"><a class="catalog-card-link" href="'+url+'"><div class="catalog-image"><img src="'+escapeHtml(p.image)+'" alt="" loading="lazy" width="600" height="600">'+(p.badge?'<span>'+escapeHtml(p.badge)+'</span>':'')+'</div><div class="catalog-info"><p>'+names[p.category]+' · '+escapeHtml(p.brand||p.club||'')+'</p><h2>'+escapeHtml(p.name)+'</h2><small>'+escapeHtml(p.description||p.season||'')+'</small><div>'+(Number.isFinite(p.price)?'<strong>'+price(p.price)+'</strong>':'<small>Prix à consulter chez le fournisseur</small>')+'</div><span class="catalog-discover">Découvrir le produit →</span></div></a></article>';
+ return '<article class="catalog-product"><a class="catalog-card-link" href="'+url+'"><div class="catalog-image">'+(p.image?'<img src="'+escapeHtml(p.image)+'" alt="" loading="lazy" width="600" height="600" onerror="this.remove()">':'')+''+(p.badge?'<span>'+escapeHtml(p.badge)+'</span>':'')+'</div><div class="catalog-info"><p>'+names[p.category]+' · '+escapeHtml(p.brand||p.club||'')+'</p><h2>'+escapeHtml(p.name)+'</h2><small>'+escapeHtml(p.description||p.season||'')+'</small><div>'+(Number.isFinite(p.price)?'<strong>'+price(p.price)+'</strong>':'<small>Prix à consulter chez le fournisseur</small>')+'</div><span class="catalog-discover">Découvrir le produit →</span></div></a></article>';
 }
 function finderCard() {
   return '<article class="catalog-product finder-catalog-card"><a href="trouve-ton-gant.html" class="finder-card-inner"><span class="finder-card-kicker">OUTIL KEEPERLAB</span><strong>?</strong><h2>PAS SÛR DU<br>MODÈLE ?</h2><p>3 questions. Des recommandations expliquées.</p><b>Trouver mes gants <i>→</i></b></a></article>';
@@ -167,9 +168,9 @@ function updateSortButton(){
 }
 sortButton.addEventListener('click',()=>{sortButton.value=sortButton.value===''?'asc':sortButton.value==='asc'?'desc':'';updateSortButton();render();});
 updateSortButton();
-const fields={brand:'Marque',size:'Taille disponible (relevée)',cut:'Coupe',latex:'Latex',terrain:'Terrain',conditions:'Conditions',fit:'Ajustement',closure:'Fermeture',fingerProtection:'Protection des doigts',surface:'Surface / semelle',metalStuds:'Crampons métalliques'};
+const fields={brand:'Marque',color:'Couleur',size:'Taille proposée',cut:'Coupe',latex:'Latex',terrain:'Terrain',conditions:'Conditions',fit:'Ajustement',closure:'Fermeture',fingerProtection:'Protection des doigts',surface:'Surface / semelle',metalStuds:'Crampons métalliques'};
 function values(p,key){
- if(key==='size')return p.availability?.selectableSizes||[];
+ if(key==='size')return p.availability?.selectableSizes||p.sizes||[];if(key==='color')return p.color?[p.color]:[];
  let value=key==='brand'?p.brand:p.specs?.[key];
  if(key==='cut'&&typeof value==='string'){
   const cut=value.toLowerCase();
@@ -185,12 +186,12 @@ function matchesAdvanced(p){
  return (!budget||(Number.isFinite(p.price)&&p.price<=Number(budget)))&&[...advanced.querySelectorAll('[data-field]')].every(s=>!s.value||values(p,s.dataset.field).includes(s.value));
 }
 function buildAdvanced(){
- const keys=active==='gants'?['brand','size','cut','latex','terrain','conditions','fit','closure','fingerProtection']:active==='chaussures'?['brand','size','surface','metalStuds']:['brand'];
+ const keys=active==='gants'?['brand','color','size','cut','latex','terrain','conditions','fit','closure','fingerProtection']:active==='chaussures'?['brand','color','size','surface','metalStuds']:['brand','color','size'];
  const pool=products.filter(p=>active==='all'||p.category===active);
  advanced.innerHTML='<div class="catalog-panel-heading"><h2>Affiner ma recherche</h2><button type="button" data-close-filters aria-label="Fermer les filtres">×</button></div><div class="catalog-filter-fields">'+keys.map(key=>{
  const options=[...new Set(pool.flatMap(p=>values(p,key)))].sort((a,b)=>a.localeCompare(b,'fr',{numeric:true}));
  return '<label>'+fields[key]+'<select data-field="'+key+'" '+(!options.length?'disabled':'')+'><option value="">'+(options.length?'Tous / toutes':'Information non renseignée')+'</option>'+options.map(v=>'<option>'+escapeHtml(v)+'</option>').join('')+'</select></label>';
- }).join('')+'<label>Budget maximum (CHF)<input id="catalog-budget" type="number" min="0" step="1" placeholder="Sans limite"></label></div><p>Les tailles disponibles correspondent au dernier relevé chez le vendeur. Le stock peut évoluer. Les produits sans information ne correspondent pas à un filtre sélectionné.</p><div class="catalog-panel-actions"><button type="button" id="catalog-reset">Réinitialiser</button><button type="button" data-close-filters class="catalog-show-results">Voir les résultats</button></div>';
+ }).join('')+'<label>Budget maximum (CHF)<input id="catalog-budget" type="number" min="0" step="1" placeholder="Sans limite"></label></div><p>Les tailles proposées proviennent de la sélection fournie. Le stock est à confirmer chez le vendeur. Les produits sans information ne correspondent pas à un filtre sélectionné.</p><div class="catalog-panel-actions"><button type="button" id="catalog-reset">Réinitialiser</button><button type="button" data-close-filters class="catalog-show-results">Voir les résultats</button></div>';
 }
 advanced.addEventListener('input',render);
 advanced.addEventListener('change',render);
