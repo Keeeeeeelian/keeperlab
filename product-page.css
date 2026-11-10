@@ -156,3 +156,12 @@
     scroll-margin-top: 85px;
   }
 }
+
+.product-reading p, .product-reading > a {
+ font-size: 13px;
+ line-height: 1.85;
+}
+.product-reading p { color: #50544d; margin: 0 0 18px; }
+.product-reading > a { text-decoration: underline; text-underline-offset: 3px; }
+.product-page .product-specs > div { padding: 18px 0; border-top: 1px solid var(--line); }
+.product-page .product-specs { gap: 12px 36px; }
