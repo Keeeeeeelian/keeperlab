@@ -19,15 +19,90 @@
     "sourceUrl": "https://www.gigasport.ch/uhlsport-torwarthandschuhe-supergriphn-weiss-7769534.html",
     "image": "https://prod.kuoe.at/uhlsport-torwarthandschuhe+supergrip%2Bhn-1-768_1024_75-7769534_1.webp",
     "badge": "",
-    "description": "Paume SUPERGRIP+, coupe semi-négative et fermeture DUAL FIX SYSTEM.",
+    "description": "Paume SUPERGRIP+, coupe semi-négative HN et dos AIRPRENE. Un modèle qui associe contact ajusté, fermeture DUAL FIX SYSTEM et zones de flexion sur le dos de la main.",
     "specs": {
       "cut": "Semi-négative (HN)",
       "latex": "SUPERGRIP+",
       "closure": "DUAL FIX SYSTEM",
-      "conditions": "Toutes conditions météo",
-      "fit": "AIRPRENE · FLEX ENTRY"
+      "conditions": "Sec et humide · toutes conditions annoncées",
+      "fit": "Près des doigts",
+      "backhand": "AIRPRENE respirant",
+      "entry": "FLEX ENTRY élastique",
+      "punchZone": "REBOUND ZONE",
+      "flexibility": "3D FLEX",
+      "wraps": "Retours au pouce et au bord de la main"
     },
-    "sourceRow": 4
+    "sourceRow": 4,
+    "specNotes": {
+      "cut": "HN signifie Half Negative : les coutures intérieures favorisent un ajustement proche des doigts.",
+      "latex": "Mousse avec éléments « high-grip ». Le fabricant présente cette famille comme une solution d’accroche pour le sec et l’humide.",
+      "closure": "Deux éléments de fermeture permettent d’ajuster la fixation tout en conservant la mobilité du poignet.",
+      "fit": "L’ajustement dépend de votre main ; AIRPRENE désigne le matériau du dos, pas une coupe.",
+      "backhand": "Le support respirant du gant participe au confort de l’enveloppe.",
+      "entry": "L’ouverture extensible accompagne l’enfilage et les mouvements au poignet.",
+      "punchZone": "Zone fonctionnelle du dos utilisée lors des dégagements aux poings.",
+      "flexibility": "Mise en forme en trois dimensions de la mousse destinée à faciliter la flexion.",
+      "wraps": "La mousse se prolonge autour de ces zones pour compléter le contact."
+    },
+    "technicalContent": {
+      "checkedAt": "2026-11-10",
+      "sections": [
+        {
+          "eyebrow": "PAUME ET PRISE DE BALLE",
+          "title": "SUPERGRIP+ : privilégier le contact",
+          "paragraphs": [
+            "Les éléments adhérents intégrés distinguent cette mousse dans la gamme Uhlsport. La paume travaille avec la coupe HN : l’une forme le contact avec le ballon, l’autre détermine comment le gant enveloppe vos doigts.",
+            "Pour décider, essayez de visualiser vos prises habituelles : préférez-vous sentir le gant près des doigts ou disposer de davantage de volume ? Le SUPERGRIP+ HN mérite surtout une comparaison avec une autre coupe ajustée."
+          ]
+        },
+        {
+          "eyebrow": "CONSTRUCTION ET MOBILITÉ",
+          "title": "Un dos qui accompagne la fermeture de la main",
+          "paragraphs": [
+            "AIRPRENE, FLEX ENTRY et 3D FLEX concernent trois parties différentes : le corps respirant, l’entrée élastique et la mise en forme de la mousse. La REBOUND ZONE se situe sur le dos pour les interventions aux poings. Les retours au pouce et au bord de la main complètent l’enveloppement.",
+            "À l’essayage, ouvrez largement la main puis fermez-la plusieurs fois. Contrôlez les plis sur les articulations et la tension à la base du pouce avant de régler le poignet."
+          ]
+        },
+        {
+          "eyebrow": "REPÈRES KEEPERLAB",
+          "title": "À qui le comparer, et sur quel terrain ?",
+          "paragraphs": [
+            "Dans cette sélection, c’est le seul des trois modèles à coupe HN. L’ABSOLUTGRIP et le Prediction Supersoft présentés ici utilisent une coupe classique : commencez par cette différence de volume avant de comparer les paumes.",
+            "Uhlsport recommande le gazon souple pour préserver la famille SUPERGRIP+. Sur les surfaces abrasives, limiter les frottements avec le sol compte particulièrement. Cette indication d’usage ne permet pas de promettre un nombre de séances."
+          ]
+        },
+        {
+          "title": "Préparer et entretenir le latex",
+          "eyebrow": "AVANT ET APRÈS LA SÉANCE",
+          "items": [
+            "Avant la première utilisation, lavez les gants pour retirer les résidus de fabrication, puis laissez-les sécher.",
+            "Humidifiez la mousse avant de jouer et pendant la séance si nécessaire, conformément aux conseils Uhlsport.",
+            "Après utilisation, nettoyez à la main avec de l’eau et, si nécessaire, un peu de savon. Rincez soigneusement ; n’utilisez pas de brosse.",
+            "Laissez sécher à l’air, à l’écart du soleil et des sources de chaleur. Séparez les paumes pour éviter qu’elles collent entre elles.",
+            "Pour le rangement, Uhlsport recommande une feuille de séparation entre les paumes et un sac à gants."
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "label": "Gigasport CH · modèle 7769534",
+          "url": "https://www.gigasport.ch/uhlsport-torwarthandschuhe-supergriphn-weiss-7769534.html"
+        },
+        {
+          "label": "Uhlsport · construction SUPERGRIP+ HN, catalogue officiel",
+          "url": "https://media.uhlsport.com/uhl/2026/flipbook/uhlsport-catalogue-2026-EN/231/"
+        },
+        {
+          "label": "Uhlsport · propriétés et usage SUPERGRIP+",
+          "url": "https://www.uhlsport.com/en/goalkeeper-gloves/grip/supergrip-plus"
+        },
+        {
+          "label": "Uhlsport · entretien",
+          "url": "https://www.uhlsport.com/en/torwarthandschuhe-waschen"
+        }
+      ],
+      "note": "Caractéristiques recoupées auprès du partenaire et de la marque. Les repères KeeperLab expliquent la construction et l’essayage ; ils ne constituent pas un test terrain. Épaisseur du latex et composition détaillée non confirmées pour ces références."
+    }
   },
   {
     "id": "gigasport-7769533",
@@ -51,17 +126,85 @@
     "sourceUrl": "https://www.gigasport.ch/uhlsport-torwarthandschuhe-absolutgrip-weiss-7769533.html",
     "image": "https://prod.kuoe.at/uhlsport-torwarthandschuhe+absolutgrip-1-768_1024_75-7769533_1.webp",
     "badge": "",
-    "description": "Paume ABSOLUTGRIP et sangle latex enveloppante.",
+    "description": "Paume ABSOLUTGRIP, corps textile respirant et sangle latex enveloppante. Une construction classique avec retour de mousse au pouce et zone de frappe en relief.",
     "specs": {
       "latex": "ABSOLUTGRIP",
+      "cut": "Classique / coutures extérieures (RC)",
       "closure": "Sangle latex enveloppante et bandage intégral",
-      "conditions": "Temps sec et humide"
+      "conditions": "Temps sec et humide",
+      "backhand": "Textile respirant",
+      "wraps": "Retour de mousse au pouce",
+      "punchZone": "REBOUND ZONE en relief 3D"
     },
-    "sourceRow": 5
+    "sourceRow": 5,
+    "specNotes": {
+      "latex": "Uhlsport présente ABSOLUTGRIP comme un compromis entre adhérence et résistance à l’abrasion.",
+      "cut": "La coupe classique donne davantage de volume qu’une construction près des doigts. À distinguer du modèle Absolutgrip Tight HN.",
+      "closure": "La sangle fait le tour du poignet ; le bandage complète la fixation.",
+      "backhand": "Le tissu du corps du gant est annoncé respirant pour le confort de port.",
+      "wraps": "Le latex enveloppe le pouce pour prolonger la surface de contact.",
+      "punchZone": "Zone fonctionnelle en relief sur le poing pour les dégagements.",
+      "conditions": "Le descriptif met en avant le sec et mentionne aussi l’utilisation par temps humide."
+    },
+    "technicalContent": {
+      "checkedAt": "2026-11-10",
+      "sections": [
+        {
+          "eyebrow": "PAUME ET POLYVALENCE",
+          "title": "ABSOLUTGRIP : comprendre le compromis",
+          "paragraphs": [
+            "La marque positionne cette mousse comme une solution polyvalente dans sa gamme. Elle met l’accent sur l’équilibre entre prise de balle et abrasion, avec une utilisation annoncée au sec comme à l’humide. Cela ne constitue pas une garantie d’usure ni un résultat de test KeeperLab.",
+            "Pour votre comparaison, partez de la sensation recherchée et du terrain habituel. Une paire agréable à fermer et stable sur la main peut être plus pertinente qu’un choix fondé uniquement sur le nom du latex."
+          ]
+        },
+        {
+          "eyebrow": "COUPE ET MAINTIEN",
+          "title": "Une coupe classique, avec réglage au poignet",
+          "paragraphs": [
+            "La construction classique à coutures extérieures est plus ample que la HN. Le corps textile respirant et le retour au pouce complètent cette enveloppe ; la REBOUND ZONE en relief occupe le dos du poing.",
+            "Le serrage est assuré par une sangle latex enveloppante avec bandage intégral. Ici, la fiche partenaire ne décrit pas le DUAL FIX SYSTEM du SUPERGRIP+ HN : comparez bien les fermetures de ces deux références."
+          ]
+        },
+        {
+          "eyebrow": "REPÈRES KEEPERLAB",
+          "title": "Vérifier l’espace sans perdre la tenue",
+          "paragraphs": [
+            "Essayez main ouverte, puis poing fermé. Contrôlez que les doigts ne coulissent pas excessivement et que le retour du pouce ne crée pas de tension. Réglez ensuite la sangle ; elle doit stabiliser le gant sans devoir rattraper une taille trop grande.",
+            "Comparez ce modèle au Prediction Supersoft si vous recherchez une autre paire à coupe classique. Pour une sensation plus proche des doigts, consultez le SUPERGRIP+ HN. Ces repères portent sur la construction, pas sur un classement de performances."
+          ]
+        },
+        {
+          "title": "Préparer et entretenir le latex",
+          "eyebrow": "AVANT ET APRÈS LA SÉANCE",
+          "items": [
+            "Avant la première utilisation, lavez les gants pour retirer les résidus de fabrication, puis laissez-les sécher.",
+            "Humidifiez la mousse avant de jouer et pendant la séance si nécessaire, conformément aux conseils Uhlsport.",
+            "Après utilisation, nettoyez à la main avec de l’eau et, si nécessaire, un peu de savon. Rincez soigneusement ; n’utilisez pas de brosse.",
+            "Laissez sécher à l’air, à l’écart du soleil et des sources de chaleur. Séparez les paumes pour éviter qu’elles collent entre elles.",
+            "Pour le rangement, Uhlsport recommande une feuille de séparation entre les paumes et un sac à gants."
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "label": "Gigasport CH · modèle 7769533",
+          "url": "https://www.gigasport.ch/uhlsport-torwarthandschuhe-absolutgrip-weiss-7769533.html"
+        },
+        {
+          "label": "Uhlsport · ABSOLUTGRIP, coupe classique et construction",
+          "url": "https://www.uhlsport.com/en/fm-absolutgrip/000000000101139901-5-a"
+        },
+        {
+          "label": "Uhlsport · entretien",
+          "url": "https://www.uhlsport.com/en/torwarthandschuhe-waschen"
+        }
+      ],
+      "note": "Caractéristiques recoupées auprès du partenaire et de la marque. Les repères KeeperLab expliquent la construction et l’essayage ; ils ne constituent pas un test terrain. Épaisseur du latex et composition détaillée non confirmées pour ces références."
+    }
   },
   {
     "id": "gigasport-7656574",
-    "name": "Uhlsport Supersoft",
+    "name": "Uhlsport Prediction Supersoft",
     "brand": "Uhlsport",
     "category": "gants",
     "price": 47.9,
@@ -76,11 +219,87 @@
     "merchant": "Gigasport CH",
     "affiliateUrl": "https://www.awin1.com/cread.php?awinmid=22149&awinaffid=3056435&campaign=Gigasport+CH&ued=https%3A%2F%2Fwww.gigasport.ch%2Fuhlsport-torwarthandschuhe-prediction-supersoft-dunkelblau-7656574.html",
     "sourceUrl": "https://www.gigasport.ch/uhlsport-torwarthandschuhe-prediction-supersoft-dunkelblau-7656574.html",
-    "image": null,
+    "image": "https://prod.kuoe.at/uhlsport-torwarthandschuhe+prediction+supersoft-1-768_1024_75-7656574_1.webp",
     "badge": "",
-    "description": "Bleu foncé",
-    "specs": {},
-    "sourceRow": 6
+    "description": "Prediction Supersoft à coupe classique RC, avec paume SUPERSOFT, corps textile respirant et fermeture par sangle latex. La version à coutures extérieures de la collection Prediction.",
+    "specs": {
+      "latex": "SUPERSOFT",
+      "cut": "Classique / coutures extérieures (RC)",
+      "closure": "Sangle latex enveloppante et bandage intégral",
+      "terrain": "Gazon naturel",
+      "conditions": "Toutes conditions météo annoncées",
+      "fit": "Coupe classique plus ample",
+      "backhand": "Textile respirant",
+      "punchZone": "REBOUND ZONE en relief 3D",
+      "collection": "Prediction"
+    },
+    "sourceRow": 6,
+    "specNotes": {
+      "latex": "Uhlsport destine cette famille aux débutants et amateurs et la positionne comme la plus adhérente de sa série SOFT.",
+      "cut": "RC signifie Regular Cut : une construction classique, distincte du Prediction Supersoft HN.",
+      "closure": "La sangle entoure le poignet, avec un bandage intégral pour compléter la fixation.",
+      "terrain": "Le gazon est la surface indiquée pour ce modèle dans la fiche fabricant.",
+      "conditions": "Il s’agit d’une indication fabricant, pas d’une mesure comparative du grip sous la pluie.",
+      "fit": "Les coutures extérieures laissent davantage de volume ; vérifiez la tenue sur votre main.",
+      "backhand": "Le corps textile est annoncé respirant pour le confort.",
+      "punchZone": "Le dos du poing comporte une zone fonctionnelle mise en relief.",
+      "collection": "Identifie la ligne du produit ; le nom Supersoft seul ne suffit pas à distinguer les coupes."
+    },
+    "technicalContent": {
+      "checkedAt": "2026-11-10",
+      "sections": [
+        {
+          "eyebrow": "PAUME ET POSITIONNEMENT",
+          "title": "SUPERSOFT : situer cette mousse dans la gamme",
+          "paragraphs": [
+            "La série SOFT regroupe plusieurs mousses, avec des équilibres différents entre adhérence et abrasion. Uhlsport place SUPERSOFT en tête de cette série pour l’accroche et la destine aux débutants comme aux amateurs. Ce positionnement ne signifie pas qu’elle dépasse les autres familles de latex.",
+            "Pour un premier choix, comparez le confort, la coupe et votre fréquence de jeu. Les caractéristiques du gant vous aident à choisir une construction ; elles ne remplacent pas l’essayage."
+          ]
+        },
+        {
+          "eyebrow": "IDENTIFIER LA BONNE VERSION",
+          "title": "Prediction Supersoft RC, pas Supersoft HN",
+          "paragraphs": [
+            "La référence Gigasport renvoie au modèle Prediction à coutures extérieures. Le fabricant décrit une coupe classique plus ample, un corps textile respirant, une sangle latex avec bandage intégral et une REBOUND ZONE en relief 3D.",
+            "La variante HN existe également dans la collection. Vérifiez le libellé RC ou Classic Cut sur la référence commandée si vous souhaitez retrouver la construction présentée ici."
+          ]
+        },
+        {
+          "eyebrow": "REPÈRES KEEPERLAB",
+          "title": "Gazon et confort : les points à contrôler",
+          "paragraphs": [
+            "Le fabricant renseigne le gazon et toutes les conditions météo pour cette version. Cette mention ne doit pas être comprise comme une promesse de grip identique sur chaque surface ou par toute intensité de pluie.",
+            "Pour profiter du volume de la coupe classique, vérifiez que les doigts restent bien positionnés dans le gant. Comparez-le à l’ABSOLUTGRIP pour une autre construction classique ou au SUPERGRIP+ HN pour une enveloppe plus ajustée."
+          ]
+        },
+        {
+          "title": "Préparer et entretenir le latex",
+          "eyebrow": "AVANT ET APRÈS LA SÉANCE",
+          "items": [
+            "Avant la première utilisation, lavez les gants pour retirer les résidus de fabrication, puis laissez-les sécher.",
+            "Humidifiez la mousse avant de jouer et pendant la séance si nécessaire, conformément aux conseils Uhlsport.",
+            "Après utilisation, nettoyez à la main avec de l’eau et, si nécessaire, un peu de savon. Rincez soigneusement ; n’utilisez pas de brosse.",
+            "Laissez sécher à l’air, à l’écart du soleil et des sources de chaleur. Séparez les paumes pour éviter qu’elles collent entre elles.",
+            "Pour le rangement, Uhlsport recommande une feuille de séparation entre les paumes et un sac à gants."
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "label": "Gigasport CH · modèle 7656574",
+          "url": "https://www.gigasport.ch/uhlsport-torwarthandschuhe-prediction-supersoft-dunkelblau-7656574.html"
+        },
+        {
+          "label": "Uhlsport · Prediction Supersoft RC",
+          "url": "https://www.uhlsport.com/en/prediction-supersoft/000000000101133501-6-a"
+        },
+        {
+          "label": "Uhlsport · entretien",
+          "url": "https://www.uhlsport.com/en/torwarthandschuhe-waschen"
+        }
+      ],
+      "note": "Caractéristiques recoupées auprès du partenaire et de la marque. Les repères KeeperLab expliquent la construction et l’essayage ; ils ne constituent pas un test terrain. Épaisseur du latex et composition détaillée non confirmées pour ces références."
+    }
   },
   {
     "id": "gigasport-7712383",

@@ -217,3 +217,24 @@
 @media (max-width: 800px) {
  .product-specs > div, .product-advice > div { grid-template-columns: 1fr; }
 }
+
+/* Model-specific, sourced technical guides. */
+#fiche-technique { scroll-margin-top: 100px; }
+.product-specs > .product-technical-details { display: block; margin-top: 32px; }
+.model-technical-content { max-width: 880px; margin: 0 auto; }
+.model-technical-content .technical-section { padding: 32px 0; border-top: 1px solid var(--line); }
+.technical-section .eyebrow { font-size: 10px; letter-spacing: 1.5px; color: #587500; margin: 0 0 12px; }
+.technical-section h3 { font-size: clamp(22px, 3vw, 30px); line-height: 1.3; margin: 0 0 20px; }
+.technical-section > p:not(.eyebrow), .technical-section li { font-size: 14px; line-height: 1.9; color: #50544d; }
+.technical-section > p { margin: 0 0 16px; }
+.technical-section ol, .technical-section ul { padding-left: 22px; }
+.technical-section a { text-decoration: underline; text-underline-offset: 4px; }
+.technical-section a:focus-visible { outline: 2px solid var(--ink); outline-offset: 4px; }
+.technical-sources { background: #f1f3ed; padding: 26px !important; }
+.technical-related { display: flex; gap: 14px; flex-wrap: wrap; }
+.technical-related a { padding: 14px 18px; background: var(--ink); color: var(--lime); font-size: 13px; line-height: 1.6; }
+@media(max-width: 600px) {
+ #fiche-technique { scroll-margin-top: 80px; }
+ .technical-related { flex-direction: column; }
+ .technical-sources { padding: 20px !important; }
+}
